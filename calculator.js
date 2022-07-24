@@ -31,3 +31,14 @@ function operate(operator, a, b) {
         return 'ERROR';
     }
 }
+
+const screen = document.querySelector('.screen');
+const buttons = document.querySelectorAll('button');
+let buttonArray = Array.from(buttons);
+buttonArray.forEach(button => {
+    button.addEventListener('click', () => {
+        let digit = document.querySelector('.text');
+        digit.textContent = button.id;
+        });
+
+})

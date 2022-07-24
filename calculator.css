@@ -46,7 +46,7 @@ button {
     margin-top: 0px;
 }
 
-.nine, .eight, .seven, .six, .five, .four, .three, .two, .one, .zero, .clear, .equals {
+.nine, .eight, .seven, .six, .five, .four, .three, .two, .one, .zero, .clr, .eqls {
     
     flex-wrap: wrap;
     width: 83.3px;
