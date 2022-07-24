@@ -1,0 +1,44 @@
+.calculator {
+    width: 400px;
+    height: 500px;
+    border: solid red 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.screen {
+    border: solid red 1px;
+    width: 350px;
+    height: 100px;
+    margin: 25px;
+    flex-shrink: 0;
+}
+
+.buttons {
+    display: flex;
+    border: solid red 1px;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid red 1px;
+    width: 250px;
+    height: 325px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nine, .eight, .seven, .six, .five, .four, .three, .two, .one, .zero, .clear, .equals {
+    
+    flex-wrap: wrap;
+    width: 83px;
+}
+
+.operators {
+    width: 75px;
+    border: solid red 1px;
+}
