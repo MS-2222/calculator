@@ -1,3 +1,5 @@
+let num1Array = [];
+
 function add(a ,b) {
     return a + b;
 }
@@ -38,7 +40,8 @@ let buttonArray = Array.from(buttons);
 buttonArray.forEach(button => {
     button.addEventListener('click', () => {
         let digit = document.querySelector('.text');
-        digit.textContent = button.id;
+        num1Array.push(button.id);
+        digit.textContent = num1Array.join('');
         });
 
 })
