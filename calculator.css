@@ -46,7 +46,7 @@ button {
     margin-top: 0px;
 }
 
-.nine, .eight, .seven, .six, .five, .four, .three, .two, .one, .zero, .clr, .eqls {
+.number {
     
     flex-wrap: wrap;
     width: 83.3px;
@@ -60,7 +60,11 @@ button {
     justify-content: space-between;
 }
 
-.add, .subtract, .multiply, .divide {
+.operator {
     width: 75px;
     height: 60px;
+}
+
+.operator#equals {
+    width: 83.3px;
 }

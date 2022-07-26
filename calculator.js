@@ -1,4 +1,7 @@
-let num1Array = [];
+let numberArray = [];
+let operator_val;
+let funcArray = [];
+let numString;
 
 function add(a ,b) {
     return a + b;
@@ -35,13 +38,28 @@ function operate(operator, a, b) {
 }
 
 const screen = document.querySelector('.screen');
-const buttons = document.querySelectorAll('button');
-let buttonArray = Array.from(buttons);
-buttonArray.forEach(button => {
+
+const numbers = document.querySelectorAll('.number');
+let numArray = Array.from(numbers);
+numArray.forEach(button => {
     button.addEventListener('click', () => {
-        let digit = document.querySelector('.text');
-        num1Array.push(button.id);
-        digit.textContent = num1Array.join('');
+        let display = document.querySelector('.text');
+        numberArray.push(button.id);
+        display.textContent = numberArray.join('');
+        numString = numberArray.join('');
         });
 
+})
+
+const operators = document.querySelectorAll('.operator');
+let opArray = Array.from(operators);
+opArray.forEach(button => {
+   button.addEventListener('click', () => {
+       let display = document.querySelector('.text');
+       operator_val = button.id;
+       display.textContent = operator_val;
+       funcArray.push(numString);
+       funcArray.push(operator_val);
+       numberArray = [];
+   });
 })
