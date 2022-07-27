@@ -19,7 +19,7 @@ function divide(a, b) {
     return a / b;
 }
 
-function operate(operator, a, b) {
+function operate(a, operator, b) {
     if(operator === '+') {
         return add(a, b);
     }
@@ -37,7 +37,7 @@ function operate(operator, a, b) {
     }
 }
 
-const screen = document.querySelector('.screen');
+
 
 const numbers = document.querySelectorAll('.number');
 let numArray = Array.from(numbers);
@@ -46,7 +46,7 @@ numArray.forEach(button => {
         let display = document.querySelector('.text');
         numberArray.push(button.id);
         display.textContent = numberArray.join('');
-        numString = numberArray.join('');
+        numString = Number(numberArray.join(''));
         });
 
 })
@@ -55,6 +55,11 @@ const operators = document.querySelectorAll('.operator');
 let opArray = Array.from(operators);
 opArray.forEach(button => {
    button.addEventListener('click', () => {
+       if(funcArray.length == 3) {
+            let product = operate(funcArray[0], funcArray[1], funcArray[2]);
+            let display = document.querySelector('.text');
+            display.textContent = product;
+       }
        let display = document.querySelector('.text');
        operator_val = button.id;
        display.textContent = operator_val;
