@@ -62,6 +62,7 @@ opArray.forEach(button => {
             let display = document.querySelector('.text');
             funcArray = [];
             funcArray.push(product);
+            operator_val = button.id;
             funcArray.push(operator_val);
             display.textContent = operator_val;
             numberArray = [];
