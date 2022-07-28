@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: grey;
+    background-color: rgb(54, 52, 52);
 }
 
 .screen {
@@ -30,7 +30,6 @@
 }
 
 button {
-    background-color: blue;
     border-radius: 10px;
     font-family: 'roboto', 'sans-serif';
     font-size: 25px;
@@ -48,6 +47,8 @@ button {
 
 .number {
     
+    background-color: blue;
+    border-color: blue;
     flex-wrap: wrap;
     width: 83.3px;
     height: 60px;
@@ -61,10 +62,15 @@ button {
 }
 
 .operator {
+    background-color: rgba(202, 29, 29, 0.991);
+    border-color: rgba(202, 29, 29, 0.991);
     width: 75px;
     height: 60px;
 }
 
-.evaluate {
+.equals, .clr {
     width: 83.3px;
+    background-color: grey;
+    border-color: grey;
+    
 }

@@ -78,7 +78,7 @@ opArray.forEach(button => {
         });
    });
 
-const equals = document.querySelector('.evaluate');
+const equals = document.querySelector('.equals');
 equals.addEventListener('click', () => {
     funcArray.push(numString);
     if(funcArray.length == 3) {
