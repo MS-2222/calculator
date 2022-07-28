@@ -87,5 +87,16 @@ equals.addEventListener('click', () => {
         display.textContent = product;
         funcArray = [];
         funcArray.push(product);
-    }
-})
+    };
+});
+
+const clear = document.querySelector('.clr');
+clear.addEventListener('click', () => {
+    numberArray = [];
+    operator_val = 0;
+    funcArray = [];
+    numString = null;
+    product = 0;
+    let display = document.querySelector('.text');
+    display.textContent = numberArray;
+});
