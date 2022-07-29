@@ -46,16 +46,13 @@ button {
 }
 
 .number {
-    
     background-color: blue;
     border-color: blue;
-    flex-wrap: wrap;
     width: 83.3px;
     height: 60px;
 }
 
 .operators {
-    width: 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
