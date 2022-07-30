@@ -27,6 +27,19 @@
     display: flex;
     justify-content: space-between;
     width: 350px;
+    height: 320px;
+}
+
+.non-numbers {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.non-operators {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 button {
@@ -39,10 +52,9 @@ button {
     display: flex;
     flex-wrap: wrap;
     width: 262px;
-    height: 341px;
+    height: 255px;
     justify-content: center;
     align-content: space-between;
-    margin-top: 0px;
     gap: 2px;
 }
 
@@ -67,7 +79,8 @@ button {
     color: white;
 }
 
-.clr {
+.clr, .backspace {
+    height: 60px;
     width: 83.3px;
     background-color: grey;
     border: solid 2px grey;
