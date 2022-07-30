@@ -93,10 +93,18 @@ equals.addEventListener('click', () => {
     funcArray.push(numString);
     if(funcArray.length == 3) {
         product = operate(funcArray[0], funcArray[1], funcArray[2]);
+        productString = product.toString();
         let display = document.querySelector('.text');
-        display.textContent = product.toFixed(12);
+        if(productString.length > 12) {
+            display.textContent = product.toFixed(12);
+            funcArray = [];
+            funcArray.push(product);
+        }
+        else {
+        display.textContent = product;
         funcArray = [];
         funcArray.push(product);
+        }
     };
 });
 
