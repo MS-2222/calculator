@@ -38,16 +38,17 @@ button {
 .numbers {
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
-    height: 325px;
+    width: 262px;
+    height: 341px;
     justify-content: center;
     align-content: space-between;
     margin-top: 0px;
+    gap: 2px;
 }
 
 .number {
     background-color: blue;
-    border-color: blue;
+    border: solid 2px blue;
     width: 83.3px;
     height: 60px;
 }
@@ -60,14 +61,22 @@ button {
 
 .operator {
     background-color: rgba(202, 29, 29, 0.991);
-    border-color: rgba(202, 29, 29, 0.991);
+    border: solid 2px rgba(202, 29, 29, 0.991);
     width: 75px;
     height: 60px;
+    color: white;
 }
 
-.equals, .clr {
+.decimal, .clr {
     width: 83.3px;
     background-color: grey;
-    border-color: grey;
+    border: solid 2px grey;
     
+}
+
+.equals {
+    background-color: rgb(18, 152, 18);
+    border-color: rgb(18, 152, 18);
+    width: 75px;
+    height: 60px;
 }
