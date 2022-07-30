@@ -62,6 +62,13 @@ numArray.forEach(button => {
 
 })
 
+const backspace = document.querySelector('.backspace');
+backspace.addEventListener('click', () => {
+    let display = document.querySelector('.text');
+    numberArray.pop();
+    display.textContent = numberArray.join('');
+})
+
 const operators = document.querySelectorAll('.operator');
 let opArray = Array.from(operators);
 opArray.forEach(button => {
