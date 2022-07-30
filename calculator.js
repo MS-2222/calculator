@@ -50,10 +50,15 @@ let numArray = Array.from(numbers);
 numArray.forEach(button => {
     button.addEventListener('click', () => {
         let display = document.querySelector('.text');
+        if(display.textContent.includes('.') && button.id === '.') {
+            return;
+        }
+        else {
         numberArray.push(button.id);
         display.textContent = numberArray.join('');
         numString = Number(numberArray.join(''));
-        });
+        };
+    });
 
 })
 
