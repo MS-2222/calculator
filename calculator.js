@@ -31,7 +31,12 @@ function operate(a, operator, b) {
         return multiply(a, b);
     }
     else if(operator === '/') {
-        return divide(a, b);
+        if(b === 0){
+            return 'Nice Try...';
+        }
+        else {
+            return divide(a, b);
+        }
     }
     else {
         return 'ERROR';
